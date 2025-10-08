@@ -22,14 +22,6 @@ const saveTodos = (Todo: TodoTypes[]) => {
 const args = process.argv.slice(2);
 const command = args[0];
 
-console.log('TODO');
-console.log('Available commands:');
-console.log('list');
-console.log('add');
-console.log('completed');
-console.log('delete');
-
-
 switch(command){
     case 'add':{
         const task = args.slice(1).join(' ');
